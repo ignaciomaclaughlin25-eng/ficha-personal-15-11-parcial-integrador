@@ -1,19 +1,14 @@
 /* styles.css */
 
-/* -------------------------------------------------------------------------- */
-/* ESTILOS FICHA PERSONAL UNIVERSITARIA (Basado en la referencia)              */
-/* -------------------------------------------------------------------------- */
-
-/* Importación de tipografía legible */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Variables CSS para colores temáticos UADE/Consigna */
 :root {
-    /* Colores del HEADER y FOOTER de la consigna */
+    
     --color-uade-red: #ea6060; 
     --color-uade-dark: #cc3d3d; 
     
-    /* Colores del contenido */
+   
     --color-bg-light: #f5f5f5; /* Fondo general claro */
     --color-text-dark: #333;
     
@@ -385,4 +380,5 @@ body.theme-dark .highlight-green {
     .ficha-card {
         padding: 15px;
     }
+
 }
