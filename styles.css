@@ -1,27 +1,28 @@
 /* styles.css */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Variables CSS para colores temáticos UADE/Consigna */
+
 :root {
     
     --color-uade-red: #ea6060; 
     --color-uade-dark: #cc3d3d; 
     
-   
-    --color-bg-light: #f5f5f5; /* Fondo general claro */
+    
+    --color-bg-light: #f5f5f5; 
     --color-text-dark: #333;
     
-    /* Colores de las etiquetas de la ficha (ejemplo) */
+    
     --color-highlight-green: #e0f898; 
-    --color-card-bg: #e0e0e0; /* Fondo de la tarjeta (gris claro) */
+    --color-card-bg: #e0e0e0; 
     
-    /* Botones */
+    
     --color-btn-purple: #6a5acd;
-    --color-btn-submit: #4CAF50; /* Verde */
-    --color-btn-reset: #48d1cc; /* Azul Cian/Turquesa */
+    --color-btn-submit: #4CAF50; 
+    --color-btn-reset: #48d1cc; 
     
-    /* Temas - Inicial CLARO */
+    
     --color-theme-bg: var(--color-bg-light); 
     --color-theme-text: var(--color-text-dark);
     --color-theme-header: var(--color-uade-red);
@@ -77,7 +78,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    color: white; /* Texto blanco en el header UADE */
+    color: white; 
 }
 
 .logo {
@@ -195,14 +196,14 @@ footer {
     background-color: var(--color-highlight-green);
 }
 
-/* Botones de acción (Local y Fan Page) */
+
 .action-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Estilos de botones generales */
+
 .btn {
     padding: 12px 25px;
     border: none;
@@ -224,9 +225,6 @@ footer {
     background-color: var(--color-btn-purple);
 }
 
-/* -------------------------------------------------------------------------- */
-/* PÁGINA CONTACTO (Formulario)                                               */
-/* -------------------------------------------------------------------------- */
 
 .form-group {
     margin-bottom: 15px;
@@ -251,7 +249,7 @@ footer {
     background-color: white; 
 }
 
-/* Colores de los botones Enviar/Borrar */
+
 .form-buttons {
     display: flex;
     justify-content: center;
@@ -266,9 +264,9 @@ footer {
     background-color: var(--color-btn-reset);
 }
 
-/* Validación y Errores */
+
 .error-text {
-    color: var(--color-uade-dark); /* Color rojo para los errores */
+    color: var(--color-uade-dark); 
     font-size: 0.85rem;
     margin-top: 5px;
 }
@@ -287,9 +285,6 @@ footer {
     color: var(--color-uade-dark);
 }
 
-/* -------------------------------------------------------------------------- */
-/* MODO OSCURO (Requisito 4)                                                  */
-/* -------------------------------------------------------------------------- */
 
 body.theme-dark {
     --color-theme-bg: #1e1e1e;
@@ -318,18 +313,14 @@ body.theme-dark .ficha-card textarea {
 }
 
 body.theme-dark .highlight-green {
-    background-color: #525f38; /* Color visible en fondo oscuro */
+    background-color: #525f38; 
     color: #f0f0f0;
 }
 
-/* -------------------------------------------------------------------------- */
-/* RESPONSIVE DESIGN (Requisito 3)                                            */
-/* -------------------------------------------------------------------------- */
 
-/* Tablet y Móvil Grande (Hasta 768px) */
 @media (max-width: 768px) {
     .ficha-content {
-        /* Permite que la foto y los datos se apilen */
+        
         flex-direction: column; 
         align-items: center;
     }
@@ -340,11 +331,11 @@ body.theme-dark .highlight-green {
     }
     
     .dato-row {
-        justify-content: center; /* Centra los datos en columnas */
+        justify-content: center; 
     }
     
     .action-buttons {
-        flex-direction: column; /* Apila los dos botones */
+        flex-direction: column; 
         gap: 10px;
     }
     .btn {
@@ -352,16 +343,16 @@ body.theme-dark .highlight-green {
     }
     
     .footer-content {
-        /* Apila logo y texto en el footer */
+        
         flex-direction: column;
         gap: 10px;
     }
 }
 
-/* Móvil Pequeño (Hasta 480px) */
+
 @media (max-width: 480px) {
     .header-content {
-        /* Apila el título y la navegación */
+        
         flex-wrap: wrap; 
         justify-content: center;
         gap: 10px;
@@ -371,14 +362,13 @@ body.theme-dark .highlight-green {
         text-align: center;
     }
     .main-nav {
-        order: 1; /* Pone la navegación después del logo */
+        order: 1; 
     }
     .theme-toggle-btn {
-        order: 2; /* Mantiene el botón de tema al final */
+        order: 2; 
         align-self: flex-end;
     }
     .ficha-card {
         padding: 15px;
     }
-
 }
